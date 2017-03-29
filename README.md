@@ -8,5 +8,5 @@ This is a client side (Web browser), written in ECMAScript2015, project .
 * npm
 * webpack
 * babel
-* Eslint, cofigured with the standardjs code style ( https://standardjs.com/  )
+* Eslint, configured with the standardjs code style ( https://standardjs.com/  )
 

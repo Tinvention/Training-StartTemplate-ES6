@@ -21,9 +21,14 @@ module.exports = {
         test: /\.js$/,
         exclude: [ /node_modules/ ],
         loaders: ['babel-loader', 'eslint-loader']
+        /*
+         * "Hey webpack compiler, when you come across a path that resolves to a '.js' file inside of a
+         *  require()/import statement, use the babel-loader and eslint-loader to transform it before you add 
+         *  it to the bundle".
+         */
       }
     ]
   },
   devtool: "inline-source-map", // use 'source-map' for production
-  plugins: [new HtmlWebpackPlugin({ template: 'src/index.html' })]
+  plugins: [new HtmlWebpackPlugin({ template: 'src/index.html' })] // it use the index.html as html template
 }

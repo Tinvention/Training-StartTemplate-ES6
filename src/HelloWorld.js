@@ -4,7 +4,8 @@ class HelloWorld {
   }
 
   message () {
-    this.placeHtmlElement.target.innerHTML = '<p> Hello World from the HelloWorld.run method !! </p>'
+    let now = new Date()
+    this.placeHtmlElement.target.innerHTML = `<p> Hello !! <br /> from the HelloWorld.run method at <br />${now} /p>`
   }
 }
 
